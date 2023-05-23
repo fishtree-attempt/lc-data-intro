@@ -327,12 +327,12 @@ old period and not a metacharacter. That notation is called “escaping”
 the special character. The concept of “escaping” special characters is
 shared across a variety of computational settings, including markdown
 and Hypertext Markup Language (HTML).</p>
-<div id="callout1" class="callout callout">
+<div id="regex-syntax-and-interoperability" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="regex-syntax-and-interoperability" class="callout-inner">
-<h3 class="callout-title">Regex Syntax and interoperability<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Regex Syntax and interoperability<a class="anchor" aria-label="anchor" href="#regex-syntax-and-interoperability"></a>
 </h3>
 <div class="callout-content">
 <p>Most regular expression implementations employ similar syntaxes and
@@ -415,13 +415,13 @@ expression matching longer variants of words. So:
 <code>disrespectful</code>.</li>
 </ul></li>
 </ul><p>So, what is <code>^[Oo]rgani.e\b</code> going to match?</p>
-<div id="challenge1" class="callout challenge">
+<div id="using-special-characters-in-regular-expression-matches" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="using-special-characters-in-regular-expression-matches" class="callout-inner">
 <h3 class="callout-title">Using special characters in regular expression
-matches<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+matches<a class="anchor" aria-label="anchor" href="#using-special-characters-in-regular-expression-matches"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>^[Oo]rgani.e\b</code>
@@ -474,13 +474,13 @@ any number between one and nine digits in length.</li>
 <code>/i</code> renders an expression case-insensitive (equivalent
 to <code>[A-Za-z]</code>).</li>
 </ul><p>So, what are these going to match?</p>
-<div id="challenge2" class="callout challenge">
+<div id="rgani.ew" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="rgani.ew" class="callout-inner">
 <h3 class="callout-title">
-<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>rgani.e\w*<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>rgani.e\w*<a class="anchor" aria-label="anchor" href="#rgani.ew"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>^[Oo]rgani.e\w*</code>
@@ -510,13 +510,13 @@ letter <code>e</code> and zero or more characters from the range
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="oorgani.ew" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="oorgani.ew" class="callout-inner">
 <h3 class="callout-title">
-<code>[Oo]rgani.e\w+$</code><a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<code>[Oo]rgani.e\w+$</code><a class="anchor" aria-label="anchor" href="#oorgani.ew"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>[Oo]rgani.e\w+$</code>
@@ -546,13 +546,13 @@ characters from the range <code>[A-Za-z0-9]</code>.</p>
 </div>
 </div>
 </div>
-<div id="challenge4" class="callout challenge">
+<div id="oorgani.ewb" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="oorgani.ewb" class="callout-inner">
 <h3 class="callout-title">
-<code>^[Oo]rgani.e\w?\b</code><a class="anchor" aria-label="anchor" href="#challenge4"></a>
+<code>^[Oo]rgani.e\w?\b</code><a class="anchor" aria-label="anchor" href="#oorgani.ewb"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>^[Oo]rgani.e\w?\b</code>
@@ -582,13 +582,13 @@ characters from the range <code>[A-Za-z0-9]</code>.</p>
 </div>
 </div>
 </div>
-<div id="challenge5" class="callout challenge">
+<div id="oorgani.ew-1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="oorgani.ew-1" class="callout-inner">
 <h3 class="callout-title">
-<code>^[Oo]rgani.e\w?$</code><a class="anchor" aria-label="anchor" href="#challenge5"></a>
+<code>^[Oo]rgani.e\w?$</code><a class="anchor" aria-label="anchor" href="#oorgani.ew-1"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>^[Oo]rgani.e\w?$</code>
@@ -618,13 +618,13 @@ the range <code>[A-Za-z0-9]</code>.</p>
 </div>
 </div>
 </div>
-<div id="challenge6" class="callout challenge">
+<div id="boorgani.ew2b" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="boorgani.ew2b" class="callout-inner">
 <h3 class="callout-title">
-<code>\b[Oo]rgani.e\w{2}\b</code><a class="anchor" aria-label="anchor" href="#challenge6"></a>
+<code>\b[Oo]rgani.e\w{2}\b</code><a class="anchor" aria-label="anchor" href="#boorgani.ew2b"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>\b[Oo]rgani.e\w{2}\b</code>
@@ -654,13 +654,13 @@ from the range <code>[A-Za-z0-9]</code>.</p>
 </div>
 </div>
 </div>
-<div id="challenge7" class="callout challenge">
+<div id="boorgani.ebboorgani.ew1b" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="boorgani.ebboorgani.ew1b" class="callout-inner">
 <h3 class="callout-title">
-<code>\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b</code><a class="anchor" aria-label="anchor" href="#challenge7"></a>
+<code>\b[Oo]rgani.e\b|\b[Oo]rgani.e\w{1}\b</code><a class="anchor" aria-label="anchor" href="#boorgani.ebboorgani.ew1b"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression
@@ -717,12 +717,12 @@ work out what they would match.</p>
 use <a href="https://regex101.com/" class="external-link">regex101</a>, <a href="https://myregexp.com/" class="external-link">myregexp</a>, <a href="https://www.regexpal.com/" class="external-link">regex pal</a> or <a href="https://regexper.com/" class="external-link">regexper.com</a>: the first three help you
 see what text your regular expression will match, the latter visualises
 the workflow of a regular expression.</p>
-<div id="challenge8" class="callout challenge">
+<div id="using-square-brackets" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="using-square-brackets" class="callout-inner">
-<h3 class="callout-title">Using square brackets<a class="anchor" aria-label="anchor" href="#challenge8"></a>
+<h3 class="callout-title">Using square brackets<a class="anchor" aria-label="anchor" href="#using-square-brackets"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>Fr[ea]nc[eh]</code> match?</p>
@@ -752,12 +752,12 @@ regular expression, such as <code>in French</code>,
 </div>
 </div>
 </div>
-<div id="challenge9" class="callout challenge">
+<div id="using-dollar-signs" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="using-dollar-signs" class="callout-inner">
-<h3 class="callout-title">Using dollar signs<a class="anchor" aria-label="anchor" href="#challenge9"></a>
+<h3 class="callout-title">Using dollar signs<a class="anchor" aria-label="anchor" href="#using-dollar-signs"></a>
 </h3>
 <div class="callout-content">
 <p>What will the regular expression <code>Fr[ea]nc[eh]$</code>
@@ -786,12 +786,12 @@ line. It will also find strings with other characters coming
 </div>
 </div>
 </div>
-<div id="challenge10" class="callout challenge">
+<div id="introducing-options" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="introducing-options" class="callout-inner">
-<h3 class="callout-title">Introducing options<a class="anchor" aria-label="anchor" href="#challenge10"></a>
+<h3 class="callout-title">Introducing options<a class="anchor" aria-label="anchor" href="#introducing-options"></a>
 </h3>
 <div class="callout-content">
 <p>What would match the strings <code>French</code> and
@@ -815,12 +815,12 @@ line. It will also find strings with other characters coming
 </div>
 </div>
 </div>
-<div id="challenge11" class="callout challenge">
+<div id="case-insensitivity" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="case-insensitivity" class="callout-inner">
-<h3 class="callout-title">Case insensitivity<a class="anchor" aria-label="anchor" href="#challenge11"></a>
+<h3 class="callout-title">Case insensitivity<a class="anchor" aria-label="anchor" href="#case-insensitivity"></a>
 </h3>
 <div class="callout-content">
 <p>How do you match the whole words <code>colour</code> and
@@ -856,12 +856,12 @@ all case insensitive variants of <code>colour</code> and
 </div>
 </div>
 </div>
-<div id="challenge12" class="callout challenge">
+<div id="word-boundaries" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="word-boundaries" class="callout-inner">
-<h3 class="callout-title">Word boundaries<a class="anchor" aria-label="anchor" href="#challenge12"></a>
+<h3 class="callout-title">Word boundaries<a class="anchor" aria-label="anchor" href="#word-boundaries"></a>
 </h3>
 <div class="callout-content">
 <p>How would you find the whole word <code>headrest</code> and or
@@ -888,12 +888,12 @@ world cases it will be fine, it isn’t strictly correct.</p>
 </div>
 </div>
 </div>
-<div id="challenge13" class="callout challenge">
+<div id="matching-non-linguistic-patterns" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="matching-non-linguistic-patterns" class="callout-inner">
-<h3 class="callout-title">Matching non-linguistic patterns<a class="anchor" aria-label="anchor" href="#challenge13"></a>
+<h3 class="callout-title">Matching non-linguistic patterns<a class="anchor" aria-label="anchor" href="#matching-non-linguistic-patterns"></a>
 </h3>
 <div class="callout-content">
 <p>How would you find a string that ends with four letters preceded by
@@ -915,12 +915,12 @@ at least one zero?</p>
 </div>
 </div>
 </div>
-<div id="challenge14" class="callout challenge">
+<div id="matching-digits" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="matching-digits" class="callout-inner">
-<h3 class="callout-title">Matching digits<a class="anchor" aria-label="anchor" href="#challenge14"></a>
+<h3 class="callout-title">Matching digits<a class="anchor" aria-label="anchor" href="#matching-digits"></a>
 </h3>
 <div class="callout-content">
 <p>How do you match any four-digit string anywhere?</p>
@@ -943,12 +943,12 @@ of numbers and letters.</p>
 </div>
 </div>
 </div>
-<div id="challenge15" class="callout challenge">
+<div id="matching-dates" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="matching-dates" class="callout-inner">
-<h3 class="callout-title">Matching dates<a class="anchor" aria-label="anchor" href="#challenge15"></a>
+<h3 class="callout-title">Matching dates<a class="anchor" aria-label="anchor" href="#matching-dates"></a>
 </h3>
 <div class="callout-content">
 <p>How would you match the date format <code>dd-MM-yyyy</code>?</p>
@@ -971,12 +971,12 @@ bounding.</p>
 </div>
 </div>
 </div>
-<div id="challenge16" class="callout challenge">
+<div id="matching-multiple-date-formats" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="matching-multiple-date-formats" class="callout-inner">
-<h3 class="callout-title">Matching multiple date formats<a class="anchor" aria-label="anchor" href="#challenge16"></a>
+<h3 class="callout-title">Matching multiple date formats<a class="anchor" aria-label="anchor" href="#matching-multiple-date-formats"></a>
 </h3>
 <div class="callout-content">
 <p>How would you match the date format <code>dd-MM-yyyy</code> or
@@ -1002,12 +1002,12 @@ choose to add word bounding at the start of the expression.</p>
 </div>
 </div>
 </div>
-<div id="challenge17" class="callout challenge">
+<div id="matching-publication-formats" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="matching-publication-formats" class="callout-inner">
-<h3 class="callout-title">Matching publication formats<a class="anchor" aria-label="anchor" href="#challenge17"></a>
+<h3 class="callout-title">Matching publication formats<a class="anchor" aria-label="anchor" href="#matching-publication-formats"></a>
 </h3>
 <div class="callout-content">
 <p>How would you match publication formats such as
@@ -1084,7 +1084,7 @@ data.</p>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -1108,7 +1108,7 @@ data.</p>
   "identifier": "https://preview.carpentries.org/lc-data-intro/01-regular-expressions.html",
   "dateCreated": "2023-05-03",
   "dateModified": "2023-05-03",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
